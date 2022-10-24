@@ -11,7 +11,7 @@ function create(req, res) {
         //save changes made in the flight doc
         flight.save(function(err) {
             //respond with request(redirect)
-            res.redirect(`/flights/${flight._id}`)
+            res.redirect(`/flights/${req.params.id}`)
         })
     })
 }
