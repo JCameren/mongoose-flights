@@ -8,6 +8,9 @@ router.get('/', flightsCtrl.index)
 //GET ADD NEW FLIGHT form page
 router.get('/new', flightsCtrl.new)
 
+//Get single flight
+router.get('/:id', flightsCtrl.show)
+
 //POST REQUEST AFTER FORM SUBMISSION
 router.post('/', flightsCtrl.create)
 
