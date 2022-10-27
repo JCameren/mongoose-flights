@@ -14,4 +14,5 @@ router.get('/:id', flightsCtrl.show)
 //POST REQUEST AFTER FORM SUBMISSION
 router.post('/', flightsCtrl.create)
 
+
 module.exports = router;
